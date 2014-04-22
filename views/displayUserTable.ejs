@@ -1,0 +1,16 @@
+<% include header %>
+   <% if(rs.length > 0) { %>
+    <table>
+        <tr><th>Email</th><th>Name</th></tr>
+        <% for (var i=0; rs.length > i; i++) { %>
+            <tr>
+             <td><%= rs[i].email %></a></td>
+             <td><%= rs[i].Name %></a></td>
+            </tr>
+        <% } %>
+    </table>
+    <% } else { %>
+         No users are entered into the database.
+    <% } %>
+
+<% include footer %>

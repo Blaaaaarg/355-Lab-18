@@ -1,0 +1,18 @@
+<% include header %>
+
+<form method="POST" action="<%= action %>">
+    <table id="login">
+        <tr><td>Name:</td>
+            <td><input type="text" id="Name" name="Name" /></td>
+        <tr><td>Email:</td>
+            <!-- name attribute must be provided for non ajax forms -->
+            <td><input type="text" id="email" name="email" /></td>
+        </tr>
+        <tr><td>Password:</td>
+            <td><input type="password" id="password" name="password" /></td>
+        </tr>
+    </table>
+    <input type="submit">
+</form>
+
+<% include footer %>
